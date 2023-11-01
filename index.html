@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+
+    <title>Bubble Game</title>
+</head>
+<body>
+    <div class="layout">    
+        <div class="container">
+
+            <div class="heading">
+                <h1>Pop Bubble</h1>
+            </div>
+
+            <div class="top">
+                <div class="outerbox">
+                    <h2>Hit</h2>
+                    <div id="hitval" class="box">0</div>
+                </div>
+
+                <div class="outerbox">
+                    <h2>Timer</h2>
+                    <div id="timerval" class="box">60</div>
+                </div>
+                <div class="outerbox">
+                    <h2>Score</h2>
+                    <div id="scoreval" class="box">0</div>
+                </div>
+            </div>
+
+
+            <div id="btm">
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="startGame">
+                <h2>Sart Game</h2>
+                <div id="start" class="buttons" onclick="runGame()" >Play</div>
+            </div>
+            <div class="gameDuration">
+                <h2>Duration</h2>
+                <div id="duration" class="buttons">
+                    <div id="btn1" onclick="setTimer1()" >1 min</div>
+                    <div id="btn2" onclick="setTimer2()" >2 min</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js" ></script>
+
+</html>
